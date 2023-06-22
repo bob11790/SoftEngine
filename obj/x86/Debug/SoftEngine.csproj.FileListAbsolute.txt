@@ -1,0 +1,108 @@
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\bin\x86\Debug\App.xbf
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\bin\x86\Debug\Common\StandardStyles.xbf
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\bin\x86\Debug\MainPage.xbf
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\bin\x86\Debug\SoftEngine Demo.xr.xml
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\bin\x86\Debug\SoftEngine Demo.exe
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\bin\x86\Debug\SoftEngine Demo.pdb
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\bin\x86\Debug\resources.pri
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\bin\x86\Debug\AppxManifest.xml
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\bin\x86\Debug\Core\AppxManifest.xml
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\bin\x86\Debug\Core\SoftEngine Demo.exe
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\bin\x86\Debug\SoftEngine.build.appxrecipe
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\bin\x86\Debug\System.Runtime.dll
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\bin\x86\Debug\SharpDX.dll
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\bin\x86\Debug\SharpDX.pdb
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\bin\x86\Debug\SharpDX.Mathematics.dll
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\bin\x86\Debug\SharpDX.Mathematics.pdb
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\SoftEngine.csproj.AssemblyReference.cache
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\App.g.i.cs
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\App.g.cs
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\MainPage.g.i.cs
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\MainPage.g.cs
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\XamlTypeInfo.g.cs
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\App.xaml
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\Common\StandardStyles.xaml
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\MainPage.xaml
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\App.xbf
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\Common\StandardStyles.xbf
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\MainPage.xbf
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\XamlSaveStateFile.xml
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\SoftEngine.csproj.CoreCompileInputs.cache
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\SoftEngine.csproj.CopyComplete
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\SharpDX.pri.xml
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\SharpDX.Mathematics.pri.xml
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\SoftEngine Demo.exe
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\SoftEngine Demo.pdb
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\ResourceHandlingTask.state
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\priconfig.xml
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\priconfig.xml.intermediate
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\unfiltered.layout.resfiles
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\unfiltered.layout.resfiles.intermediate
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\filtered.layout.resfiles
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\filtered.layout.resfiles.intermediate
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\excluded.layout.resfiles
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\excluded.layout.resfiles.intermediate
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\resources.resfiles
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\resources.resfiles.intermediate
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\pri.resfiles
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\pri.resfiles.intermediate
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\qualifiers.txt
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\qualifiers.txt.intermediate
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\ProjectArchitectures.txt
+D:\softEngine\SoftEngine Demo Version\SoftEngine Demo\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424455200000000.json
+D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\App.xbf
+D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\Common\StandardStyles.xbf
+D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\MainPage.xbf
+D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\SoftEngine Demo.xr.xml
+D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\SoftEngine Demo.exe
+D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\SoftEngine Demo.pdb
+D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\resources.pri
+D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\AppxManifest.xml
+D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\Core\AppxManifest.xml
+D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\Core\SoftEngine Demo.exe
+D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\SoftEngine.build.appxrecipe
+D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\System.Runtime.dll
+D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\SharpDX.dll
+D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\SharpDX.pdb
+D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\SharpDX.Mathematics.dll
+D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\SharpDX.Mathematics.pdb
+D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\SoftEngine.csproj.AssemblyReference.cache
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\App.g.i.cs
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\App.g.cs
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\MainPage.g.i.cs
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\MainPage.g.cs
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\XamlTypeInfo.g.cs
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\App.xaml
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\Common\StandardStyles.xaml
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\MainPage.xaml
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\App.xbf
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\Common\StandardStyles.xbf
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\MainPage.xbf
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\XamlSaveStateFile.xml
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\SoftEngine.csproj.CoreCompileInputs.cache
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\SoftEngine.csproj.CopyComplete
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\SharpDX.pri.xml
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\SharpDX.Mathematics.pri.xml
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\SoftEngine Demo.exe
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\SoftEngine Demo.pdb
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\ResourceHandlingTask.state
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\priconfig.xml
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\priconfig.xml.intermediate
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\unfiltered.layout.resfiles
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\unfiltered.layout.resfiles.intermediate
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\filtered.layout.resfiles
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\filtered.layout.resfiles.intermediate
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\excluded.layout.resfiles
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\excluded.layout.resfiles.intermediate
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\resources.resfiles
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\resources.resfiles.intermediate
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\pri.resfiles
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\pri.resfiles.intermediate
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\qualifiers.txt
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\qualifiers.txt.intermediate
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\ProjectArchitectures.txt
+D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424455200000000.json
