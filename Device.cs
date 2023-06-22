@@ -1,6 +1,7 @@
 ﻿using Windows.UI.Xaml.Media.Imaging;
 using System.Runtime.InteropServices.WindowsRuntime;
 using SharpDX;
+using System;
 
 namespace SoftEngine
 {
@@ -96,14 +97,72 @@ namespace SoftEngine
 
                 var transformMatrix = worldMatrix * viewMatrix * projectionMatrix;
 
-                foreach (var vertex in mesh.Vertices)
+                // drawing faces
+                foreach (var face in mesh.Faces)
                 {
-                    // First, we project the 3D coordinates into the 2D space
-                    var point = Project(vertex, transformMatrix);
-                    // Then we can draw on screen
-                    DrawPoint(point);
+                    var vertexA = mesh.Vertices[face.A];
+                    var vertexB = mesh.Vertices[face.B];
+                    var vertexC = mesh.Vertices[face.C];
+
+                    var pixelA = Project(vertexA, transformMatrix);
+                    var pixelB = Project(vertexB, transformMatrix);
+                    var pixelC = Project(vertexC, transformMatrix);
+
+                    DrawBline(pixelA, pixelB);
+                    DrawBline(pixelB, pixelC);
+                    DrawBline(pixelC, pixelA);
                 }
             }
+        }
+        // drawing line with midpoints
+        public void DrawLine(Vector2 point0, Vector2 point1)
+        {
+            var dist = (point1 - point0).Length();
+
+            if (dist < 2)
+                return;
+            // find middle point between both points
+            Vector2 middlePoint = point0 + (point1 - point0) / 2;
+            // then draw the middlepoint on screen
+            DrawPoint(middlePoint);
+            // recursive algarithm to draw from both sides
+            DrawLine(point0, middlePoint);
+            DrawLine(middlePoint, point1);
+        }
+
+        // more efficient line drawing algorithm (Bresenham's line algorithm)
+        public void DrawBline(Vector2 point0, Vector2 point1)
+        {
+            // first determin the start and end points of the line segment
+            int x0 = (int)point0.X;
+            int y0 = (int)point0.Y;
+            int x1 = (int)point1.X;
+            int y1 = (int)point1.Y;
+
+            // calculate the difference in the x & y as dx & dy 
+            var dx = Math.Abs(x1 - x0);
+            var dy = Math.Abs(y1 - y0);
+            // calculate the sign of these differences
+            var sx = (x0 < x1) ? 1 : -1;
+            var sy = (y0 < y1) ? 1 : -1;
+            // Calculate the initial error value (needed for Bresenham's)
+            var err = dx - dy;
+
+            while (true)
+            {
+                // draw current point
+                DrawPoint(new Vector2(x0, y0));
+
+                // check if end point is reached
+                if ((x0 == x1) && (y0 == y1)) break;
+                // calculate err doubled  
+                var e2 = 2 * err;
+                // Adjust the error value and move along the x-axis if necessary
+                if (e2 > -dy) { err -= dy; x0 += sx; }
+                // Adjust the error value and move along the y-axis if necessary
+                if (e2 < dx) { err += dx; y0 += sy; }
+            }
+
         }
     }
 }

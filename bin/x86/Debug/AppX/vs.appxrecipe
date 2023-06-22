@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-06-21T16:25:06.378</Modified>
+      <Modified>2023-06-22T09:56:59.536</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\SoftEngine Demo.exe">
       <PackagePath>entrypoint\SoftEngine Demo.exe</PackagePath>
-      <Modified>2023-06-21T16:25:05.189</Modified>
+      <Modified>2023-06-22T09:56:58.827</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -98,15 +98,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2023-06-21T16:25:05.100</Modified>
+      <Modified>2023-06-22T09:56:58.748</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\Common\StandardStyles.xbf">
       <PackagePath>Common\StandardStyles.xbf</PackagePath>
-      <Modified>2023-06-21T16:25:05.100</Modified>
+      <Modified>2023-06-22T09:56:58.748</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2023-06-21T16:25:05.100</Modified>
+      <Modified>2023-06-22T09:56:58.748</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -118,7 +118,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\Core\SoftEngine Demo.exe">
       <PackagePath>SoftEngine Demo.exe</PackagePath>
-      <Modified>2023-06-21T16:25:06.361</Modified>
+      <Modified>2023-06-22T09:56:59.532</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
