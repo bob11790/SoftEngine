@@ -22,7 +22,7 @@ namespace SoftEngine
         {
             for (var index = 0; index < backBuffer.Length; index += 4)
             {
-                // BGRA is used by Windows instead by RGBA in HTML5
+                // BGRA is used by Windows
                 backBuffer[index] = b;
                 backBuffer[index + 1] = g;
                 backBuffer[index + 2] = r;
@@ -63,9 +63,7 @@ namespace SoftEngine
         {
             // transforming the coordinates
             var point = Vector3.TransformCoordinate(coord, transMat);
-            // The transformed coordinates will be based on coordinate system
-            // starting on the center of the screen. But drawing on screen normally starts
-            // from top left. We then need to transform them again to have x:0, y:0 on top left.
+            // transform coordinates relative to the bitmap
             var x = point.X * bmp.PixelWidth + bmp.PixelWidth / 2.0f;
             var y = -point.Y * bmp.PixelHeight + bmp.PixelHeight / 2.0f;
             return (new Vector2(x, y));
@@ -86,7 +84,6 @@ namespace SoftEngine
         // during each frame
         public void Render(Camera camera, params Mesh[] meshes)
         {
-            // To understand this part, please read the prerequisites resources
             var viewMatrix = Matrix.LookAtLH(camera.Position, camera.Target, Vector3.UnitY);
             var projectionMatrix = Matrix.PerspectiveFovRH(0.78f,
                                                            (float)bmp.PixelWidth / bmp.PixelHeight,
@@ -94,7 +91,6 @@ namespace SoftEngine
 
             foreach (Mesh mesh in meshes)
             {
-                // Beware to apply rotation before translation 
                 var worldMatrix = Matrix.RotationYawPitchRoll(mesh.Rotation.Y, mesh.Rotation.X, mesh.Rotation.Z) *
                                   Matrix.Translation(mesh.Position);
 

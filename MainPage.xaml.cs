@@ -30,12 +30,12 @@ namespace SoftEngine
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            // Choose the back buffer resolution here
+            //backBuffer resolution 
             WriteableBitmap bmp = new WriteableBitmap(640, 480);
 
             device = new Device(bmp);
 
-            // Our Image XAML control
+            //XAML Image control
             frontBuffer.Source = bmp;
 
             mesh.Vertices[0] = new Vector3(-1, 1, 1);

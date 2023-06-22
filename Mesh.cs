@@ -1,5 +1,4 @@
-﻿// Mesh.cs
-using SharpDX;
+﻿using SharpDX;
 
 namespace SoftEngine
 {
