@@ -94,8 +94,8 @@ namespace SoftEngine
 
             foreach (Mesh mesh in meshes)
             {
-                var worldMatrix = Matrix.RotationYawPitchRoll(mesh.Rotation.Y, mesh.Rotation.X - MathF.PI / 2, mesh.Rotation.Z) *
-                                  Matrix.Scaling(1.5f) * Matrix.Translation(mesh.Position);
+                var worldMatrix = Matrix.RotationYawPitchRoll(mesh.Rotation.Y, mesh.Rotation.X, mesh.Rotation.Z) * 
+                    Matrix.Translation(mesh.Position);
 
                 var transformMatrix = worldMatrix * viewMatrix * projectionMatrix;
 
@@ -217,6 +217,7 @@ namespace SoftEngine
                 {
                     var x = (float)positions[index * verticesStep].Value;
                     var y = (float)positions[index * verticesStep + 1].Value;
+                    y = -y;
                     var z = (float)positions[index * verticesStep + 2].Value;
                     mesh.Vertices[index] = new Vector3(x, y, z);
                 }

@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-06-25T22:30:44.818</Modified>
+      <Modified>2023-06-25T22:57:00.841</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\SoftEngine Demo.exe">
       <PackagePath>entrypoint\SoftEngine Demo.exe</PackagePath>
-      <Modified>2023-06-25T22:30:44.107</Modified>
+      <Modified>2023-06-25T22:57:00.116</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\New User\.nuget\packages\newtonsoft.json\13.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -96,9 +96,9 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2023-04-16T19:38:06.479</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\softEngine\SoftEngine\SoftEngine\skag.babylon">
-      <PackagePath>skag.babylon</PackagePath>
-      <Modified>2023-06-25T22:11:33.352</Modified>
+    <AppxPackagedFile Include="D:\softEngine\SoftEngine\SoftEngine\monkey.babylon">
+      <PackagePath>monkey.babylon</PackagePath>
+      <Modified>2023-06-25T22:53:40.028</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\SoftEngine Demo.xr.xml">
       <PackagePath>SoftEngine Demo.xr.xml</PackagePath>
@@ -106,15 +106,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2023-06-25T22:30:44.011</Modified>
+      <Modified>2023-06-25T22:57:00.017</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\Common\StandardStyles.xbf">
       <PackagePath>Common\StandardStyles.xbf</PackagePath>
-      <Modified>2023-06-25T22:30:44.011</Modified>
+      <Modified>2023-06-25T22:57:00.017</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2023-06-25T22:30:44.012</Modified>
+      <Modified>2023-06-25T22:57:00.017</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -122,11 +122,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-06-25T22:13:44.870</Modified>
+      <Modified>2023-06-25T22:54:11.857</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\Core\SoftEngine Demo.exe">
       <PackagePath>SoftEngine Demo.exe</PackagePath>
-      <Modified>2023-06-25T22:30:44.814</Modified>
+      <Modified>2023-06-25T22:57:00.837</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

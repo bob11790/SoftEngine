@@ -73,8 +73,8 @@
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\softEngine\SoftEngine\SoftEngine\skag.babylon">
-      <PackagePath>skag.babylon</PackagePath>
+    <AppxPackagedFile Include="D:\softEngine\SoftEngine\SoftEngine\monkey.babylon">
+      <PackagePath>monkey.babylon</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\SoftEngine Demo.xr.xml">
       <PackagePath>SoftEngine Demo.xr.xml</PackagePath>
