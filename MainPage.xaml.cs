@@ -25,10 +25,12 @@ namespace SoftEngine
     public sealed partial class MainPage : Page
     {
         private Device device;
-        Mesh mesh = new Mesh("Cube", 8, 12);
+        Mesh[] meshes;
         Camera mera = new Camera();
+        float frameCount = 0;
+        float bobbingHeight = 0.01f; // Adjust this value to control the bobbing height
 
-        private void Page_Loaded(object sender, RoutedEventArgs e)
+        private async void Page_Loaded(object sender, RoutedEventArgs e)
         {
             //backBuffer resolution 
             WriteableBitmap bmp = new WriteableBitmap(640, 480);
@@ -38,31 +40,12 @@ namespace SoftEngine
             //XAML Image control
             frontBuffer.Source = bmp;
 
-            mesh.Vertices[0] = new Vector3(-1, 1, 1);
-            mesh.Vertices[1] = new Vector3(1, 1, 1);
-            mesh.Vertices[2] = new Vector3(-1, -1, 1);
-            mesh.Vertices[3] = new Vector3(1, -1, 1);
-            mesh.Vertices[4] = new Vector3(-1, 1, -1);
-            mesh.Vertices[5] = new Vector3(1, 1, -1);
-            mesh.Vertices[6] = new Vector3(1, -1, -1);
-            mesh.Vertices[7] = new Vector3(-1, -1, -1);
+            // load mesh from JSON file 
+            meshes = await device.LoadJSONFileAsync("skag.babylon");
 
-            mesh.Faces[0] = new Face { A = 0, B = 1, C = 2 };
-            mesh.Faces[1] = new Face { A = 1, B = 2, C = 3 };
-            mesh.Faces[2] = new Face { A = 1, B = 3, C = 6 };
-            mesh.Faces[3] = new Face { A = 1, B = 5, C = 6 };
-            mesh.Faces[4] = new Face { A = 0, B = 1, C = 4 };
-            mesh.Faces[5] = new Face { A = 1, B = 4, C = 5 };
-
-            mesh.Faces[6] = new Face { A = 2, B = 3, C = 7 };
-            mesh.Faces[7] = new Face { A = 3, B = 6, C = 7 };
-            mesh.Faces[8] = new Face { A = 0, B = 2, C = 7 };
-            mesh.Faces[9] = new Face { A = 0, B = 4, C = 7 };
-            mesh.Faces[10] = new Face { A = 4, B = 5, C = 6 };
-            mesh.Faces[11] = new Face { A = 4, B = 6, C = 7 };
-
+            // initialize camera values
             mera.Position = new Vector3(0, 0, 10.0f);
-            mera.Target = Vector3.Zero;
+            mera.Target = new Vector3(0, -1f, 0f);
 
             // Registering to the XAML rendering loop
             CompositionTarget.Rendering += CompositionTarget_Rendering;
@@ -73,12 +56,27 @@ namespace SoftEngine
         {
             device.Clear(0, 0, 0, 255);
 
-            // rotating slightly the cube during each frame rendered
-            mesh.Rotation = new Vector3(mesh.Rotation.X + 0.01f, mesh.Rotation.Y + 0.01f, mesh.Rotation.Z);
+            // Calculate vertical displacement (bobbing)
+            float displacement = (float)Math.Sin(frameCount * 0.1f) * bobbingHeight;
+
+            // Update the position of the camera to create the bobbing effect
+            Vector3 cameraPosition = mera.Target;
+            cameraPosition.Y += displacement;
+            mera.Target = cameraPosition;
+
+
+            foreach (var mesh in meshes)
+            {
+                // rotating slightly the meshes during each frame rendered
+                mesh.Rotation = new Vector3(mesh.Rotation.X, mesh.Rotation.Y + 0.01f, mesh.Rotation.Z);
+            }
+            
             // Doing the various matrix operations
-            device.Render(mera, mesh);
+            device.Render(mera, meshes);
             // Flushing the back buffer into the front buffer
             device.Present();
+            // Increment the frame count for animation
+            frameCount += 0.5f;
         }
 
         public MainPage()

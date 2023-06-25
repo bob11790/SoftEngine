@@ -106,3 +106,4 @@ D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\qualifiers.txt.intermediate
 D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\ProjectArchitectures.txt
 D:\softEngine\SoftEngine\SoftEngine\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424455200000000.json
+D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\Newtonsoft.Json.dll

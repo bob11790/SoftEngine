@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "K0RlbXifS9GNqohSV/UAMmH5FEix2zPNGylYS/kzSFPF/gfA7H2IUaTKzi+Lgz36/qQxjzZxeQQC9eK/KRnIPg==",
+  "dgSpecHash": "QB3fy/LB4Y8tKG//AG812Tw0Fsq3eAJcQqIB4jYTLovMRTguDBxujaoeXKErKWu+6V/HD/HQN6EYp/SDzL1OXw==",
   "success": true,
   "projectFilePath": "D:\\softEngine\\SoftEngine\\SoftEngine\\SoftEngine.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.netcore.universalwindowsplatform\\6.2.14\\microsoft.netcore.universalwindowsplatform.6.2.14.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\New User\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform\\6.2.14\\runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform.6.2.14.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-arm.microsoft.net.native.compiler\\2.2.12-rel-31116-00\\runtime.win10-arm.microsoft.net.native.compiler.2.2.12-rel-31116-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-arm.microsoft.net.native.sharedlibrary\\2.2.8-rel-31116-00\\runtime.win10-arm.microsoft.net.native.sharedlibrary.2.2.8-rel-31116-00.nupkg.sha512",

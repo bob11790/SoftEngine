@@ -2,6 +2,8 @@
 using System.Runtime.InteropServices.WindowsRuntime;
 using SharpDX;
 using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace SoftEngine
 {
@@ -92,8 +94,8 @@ namespace SoftEngine
 
             foreach (Mesh mesh in meshes)
             {
-                var worldMatrix = Matrix.RotationYawPitchRoll(mesh.Rotation.Y, mesh.Rotation.X, mesh.Rotation.Z) *
-                                  Matrix.Translation(mesh.Position);
+                var worldMatrix = Matrix.RotationYawPitchRoll(mesh.Rotation.Y, mesh.Rotation.X - MathF.PI / 2, mesh.Rotation.Z) *
+                                  Matrix.Scaling(1.5f) * Matrix.Translation(mesh.Position);
 
                 var transformMatrix = worldMatrix * viewMatrix * projectionMatrix;
 
@@ -162,7 +164,78 @@ namespace SoftEngine
                 // Adjust the error value and move along the y-axis if necessary
                 if (e2 < dx) { err += dx; y0 += sy; }
             }
+        }
 
+        // Loading JSON file in asynchronous manner
+        public async Task<Mesh[]> LoadJSONFileAsync(string fileName)
+        {
+            var meshes = new List<Mesh>();
+            var file = await
+                Windows.ApplicationModel.Package.Current.InstalledLocation.GetFileAsync(fileName);
+            var data = await Windows.Storage.FileIO.ReadTextAsync(file);
+            dynamic jsonobject = 
+                Newtonsoft.Json.JsonConvert.DeserializeObject(data);
+
+            for (var meshIndex = 0; meshIndex < jsonobject.meshes.Count; meshIndex++)
+            {
+                var meshData = jsonobject.meshes[meshIndex];
+
+                // Vertices
+                var positions = meshData.positions;
+                var verticesStep = 3; // Number of coordinates per vertex
+
+                // UV coordinates
+                var uvData = meshData.uvs;
+                var uvCount = uvData != null ? uvData.Count : 0;
+
+                // Depending on the number of texture coordinates per vertex
+                // we determine the number of elements per vertex
+                switch (uvCount)
+                {
+                    case 0:
+                        verticesStep = 3; // Only positions
+                        break;
+                    case 1:
+                        verticesStep = 4; // Positions + 1 set of UV coordinates
+                        break;
+                    case 2:
+                        verticesStep = 5; // Positions + 2 sets of UV coordinates
+                        break;
+                }
+
+                // The number of interesting vertices information
+                var verticesCount = positions.Count / verticesStep;
+
+                // Faces
+                var indices = meshData.indices;
+                var facesCount = indices.Count / 3;
+
+                var mesh = new Mesh((string)meshData.name, (int)verticesCount, (int)facesCount);
+
+                // filling the vertices array of our mesh first
+                for (var index = 0; index < verticesCount; index++)
+                {
+                    var x = (float)positions[index * verticesStep].Value;
+                    var y = (float)positions[index * verticesStep + 1].Value;
+                    var z = (float)positions[index * verticesStep + 2].Value;
+                    mesh.Vertices[index] = new Vector3(x, y, z);
+                }
+
+                // then filling faces array
+                for (var index = 0; index < facesCount; index++)
+                {
+                    var a = (int)indices[index * 3].Value;
+                    var b = (int)indices[index * 3 + 1].Value;
+                    var c = (int)indices[index * 3 + 2].Value;
+                    mesh.Faces[index] = new Face { A = a, B = b, C = c };
+                }
+                // getting the position set in blender
+                var position = jsonobject.meshes[meshIndex].position;
+                mesh.Position = new Vector3((float)position[0].Value,
+                    (float)position[1].Value, (float)position[2].Value);
+                meshes.Add(mesh);
+            }
+            return meshes.ToArray();
         }
     }
 }

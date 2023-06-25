@@ -28,6 +28,9 @@
     <AppxPackagedFile Include="D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\SoftEngine Demo.exe">
       <PackagePath>entrypoint\SoftEngine Demo.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\New User\.nuget\packages\newtonsoft.json\13.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
     </AppxPackagedFile>
@@ -69,6 +72,9 @@
     <AppxPackagedFile Include="D:\softEngine\SoftEngine\SoftEngine\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\softEngine\SoftEngine\SoftEngine\skag.babylon">
+      <PackagePath>skag.babylon</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\softEngine\SoftEngine\SoftEngine\bin\x86\Debug\SoftEngine Demo.xr.xml">
       <PackagePath>SoftEngine Demo.xr.xml</PackagePath>

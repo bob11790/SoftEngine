@@ -43,6 +43,10 @@
               "target": "Package",
               "version": "[6.2.14, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "SharpDX": {
               "target": "Package",
               "version": "[4.2.0, )"
