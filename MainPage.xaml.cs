@@ -41,11 +41,11 @@ namespace SoftEngine
             frontBuffer.Source = bmp;
 
             // load mesh from JSON file 
-            meshes = await device.LoadJSONFileAsync("skag.babylon");
+            meshes = await device.LoadJSONFileAsync("monkey.babylon");
 
             // initialize camera values
             mera.Position = new Vector3(0, 0, 10.0f);
-            mera.Target = new Vector3(0, -1f, 0f);
+            mera.Target = Vector3.Zero;
 
             // Registering to the XAML rendering loop
             CompositionTarget.Rendering += CompositionTarget_Rendering;

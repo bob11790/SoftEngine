@@ -11,20 +11,19 @@ Exporter version: 3.3.1, Blender version: 3.5.0
 		Keep Z-up r-handed  :  no
 		Texture directory   :  D:\softEngine\SoftEngine\SoftEngine\
 	Python World class constructor completed
-	WARNING: No active camera has been assigned, or is not in a currently enabled collection
-	processing begun of mesh:  Borderlands 2 Skag
-		processing begun of material:  Mati_Skag_Boll
-			processing texture Mati_Skag_Boll_baseColor
-		Custom split normals with tangents being used
-		num positions      :  3458
-		num normals        :  3458
-		num tangents       :  13832
-		num uvs            :  6916
+	processing begun of camera (UniversalCamera):  Camera
+	processing begun of mesh:  Suzanne
+		WARNING: No materials have been assigned: 
+		num positions      :  2892
+		num normals        :  2892
+		num tangents       :  0
+		num uvs            :  5784
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  2602
+		num triangles      :  968
+	processing begun of light (POINT):  Light
 ========= Writing of JSON file started =========
-	writing mesh:  Borderlands 2 Skag
+	writing mesh:  Suzanne
 ========= Writing of JSON file completed =========
 ========= end of processing =========
-elapsed time:  0 min, 0.4373 secs
+elapsed time:  0 min, 0.115 secs
