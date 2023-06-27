@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
 	"version" : 1687769620,
+=======
+	"version" : 1687770298,
+>>>>>>> version-4
 	"enableSceneOffline" : true,
 	"enableTexturesOffline" : true
 }

@@ -45,7 +45,11 @@ namespace SoftEngine
 
             // initialize camera values
             mera.Position = new Vector3(0, 0, 10.0f);
+<<<<<<< HEAD
             mera.Target =  Vector3.Zero;
+=======
+            mera.Target = Vector3.Zero;
+>>>>>>> version-4
 
             // Registering to the XAML rendering loop
             CompositionTarget.Rendering += CompositionTarget_Rendering;

@@ -26,4 +26,8 @@ Exporter version: 3.3.1, Blender version: 3.5.0
 	writing mesh:  Suzanne
 ========= Writing of JSON file completed =========
 ========= end of processing =========
+<<<<<<< HEAD
 elapsed time:  0 min, 0.159 secs
+=======
+elapsed time:  0 min, 0.115 secs
+>>>>>>> version-4
