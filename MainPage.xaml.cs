@@ -27,6 +27,7 @@ namespace SoftEngine
         private Device device;
         Mesh[] meshes;
         Camera mera = new Camera();
+        DateTime previousDate;
         float frameCount = 0;
         float bobbingHeight = 0.01f; // Adjust this value to control the bobbing height
 
@@ -45,11 +46,8 @@ namespace SoftEngine
 
             // initialize camera values
             mera.Position = new Vector3(0, 0, 10.0f);
-<<<<<<< HEAD
             mera.Target =  Vector3.Zero;
-=======
             mera.Target = Vector3.Zero;
->>>>>>> version-4
 
             // Registering to the XAML rendering loop
             CompositionTarget.Rendering += CompositionTarget_Rendering;
@@ -58,6 +56,13 @@ namespace SoftEngine
         // Rendering loop handler
         void CompositionTarget_Rendering(object sender, object e)
         {
+            // FPS 
+            var now = DateTime.Now;
+            var currentFps = 1000.0 / (now - previousDate).TotalMilliseconds;
+            previousDate = now;
+
+            fps.Text = string.Format("{0:0.00} fps", currentFps);
+            // rendering loop
             device.Clear(0, 0, 0, 255);
 
             // Calculate vertical displacement (bobbing)
